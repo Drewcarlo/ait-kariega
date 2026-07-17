@@ -1,3 +1,29 @@
+:root{
+
+    --section-padding:100px;
+
+    --card-radius:20px;
+
+    --shadow-light:0 10px 30px rgba(0,0,0,.08);
+
+    --shadow-hover:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+.programme-card{
+
+    border-radius:var(--card-radius);
+
+    box-shadow:var(--shadow-light);
+
+}
+
+.programme-card:hover{
+
+    box-shadow:var(--shadow-hover);
+
+}
+
 @media(max-width:992px){
 
 section{
@@ -208,6 +234,216 @@ grid-template-columns:1fr;
 text-align:center;
 
 justify-content:center;
+
+}
+
+}
+
+/*====================================
+
+COURSES PAGE
+
+====================================*/
+
+@media (max-width:1200px){
+
+    .programme-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:30px;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .courses-content{
+
+        text-align:center;
+
+        margin:auto;
+
+    }
+
+    .courses-content h1{
+
+        font-size:3rem;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+    .search-box{
+
+        flex-direction:column;
+
+        border-radius:20px;
+
+    }
+
+    .search-box input{
+
+        padding:20px;
+
+    }
+
+    .search-box button{
+
+        width:100%;
+
+        padding:18px;
+
+    }
+
+    .category-buttons{
+
+        gap:12px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .programme-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .courses-hero{
+
+        min-height:60vh;
+
+        padding:100px 0 70px;
+
+    }
+
+    .courses-content h1{
+
+        font-size:2.4rem;
+
+    }
+
+    .courses-content p{
+
+        font-size:1rem;
+
+    }
+
+    .programme-card img{
+
+        height:220px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .courses-content h1{
+
+        font-size:2rem;
+
+    }
+
+    .page-tag{
+
+        font-size:.75rem;
+
+    }
+
+    .category-buttons{
+
+        justify-content:flex-start;
+
+        overflow-x:auto;
+
+        flex-wrap:nowrap;
+
+        padding-bottom:10px;
+
+        scrollbar-width:none;
+
+    }
+
+    .category-buttons::-webkit-scrollbar{
+
+        display:none;
+
+    }
+
+    .category-buttons button{
+
+        white-space:nowrap;
+
+    }
+
+    .programme-content{
+
+        padding:22px;
+
+    }
+
+    .programme-info{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+}
+
+/*====================================
+
+CONTACT PAGE
+
+====================================*/
+
+@media(max-width:992px){
+
+.contact-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.contact-content{
+
+text-align:center;
+
+margin:auto;
+
+}
+
+.contact-content h1{
+
+font-size:3rem;
+
+}
+
+}
+
+@media(max-width:650px){
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-content h1{
+
+font-size:2.2rem;
 
 }
 
